@@ -1,5 +1,5 @@
 #Program that checks whether the given year is a leap year or not
-X = int(input("What is the year? ")
+X = int(input("What is the year? "))
 if X % 4==0:
   print("The given year is a leap year")
 else:
