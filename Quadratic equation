@@ -1,0 +1,19 @@
+# Program that finds the roots of a quadratic equation
+from math import sqrt
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+discriminant = (b * b)-(4 * a * c)
+if discriminant>0:
+    X1 = (-b+sqrt(discriminant))/(2*a)
+    X2 = (-b-sqrt(discriminant))/(2*a)
+    print("The roots are {} and {}".format(X1,X2))
+if discriminant<0:
+    import cmath
+    X1 = (-b+cmath.sqrt(discriminant))/(2*a)
+    X2 = (-b-cmath.sqrt(discriminant))/(2*a)
+    print("The roots are {} and {}".format(X1,X2))
+if discriminant==0:
+    X1 = (-b+sqrt(discriminant))/(2*a)
+    X2 = (-b-sqrt(discriminant))/(2*a)
+    print("The roots are {} and {}".format(X1,X2))
